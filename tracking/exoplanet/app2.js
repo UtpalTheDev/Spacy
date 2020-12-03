@@ -17,7 +17,7 @@ function exoplanet() {
                  "</div>" + 
                  "<div class='disc'>" + "Discovery: " + json[i].pl_disc +
                   "</div>" + 
-                  "<div class='param space'>" + "Star: " + json[i].pl_hostname +
+                  "<div class='param'>" + "Star: " + json[i].pl_hostname +
                    "</div>" +
                     "<div class='param'>" + "Orbital Period: " + json[i].pl_orbper+" Day" + "</div>" +
                      "<div class='param'>" + "Radius: " + json[i].pl_rade +
