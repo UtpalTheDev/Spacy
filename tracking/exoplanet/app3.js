@@ -27,24 +27,27 @@ function exoplanet() {
 
                 div += json[i].pl_name +
                  "</div>" +
-                 "<div class='float-left'>"+
-                   "<p>Star Name:"+json[i].pl_hostname +"</p>"+
-                   "<p>Radius: " + json[i].pl_rade +"( <sub>"+json[i].pl_radeerr1+"</sub> <sup>"+json[i].pl_radeerr2+"</sup> ) R<sub>J</sub>(Earth Reference)</p>"+
-                   "<p>Radius: " + json[i].pl_radj +"( <sub>"+json[i].pl_radjerr1+"</sub> <sup>"+json[i].pl_radjerr2+"</sup> ) R<sub>J</sub>(Jupiter Reference)</p>"+
-                   "<p>Orbital Time: " + json[i].pl_orbper +"( <sub>"+json[i].pl_orbpererr1+"</sub> <sup>"+json[i].pl_orbpererr2+"</sup> ) <sub></sub>+(Day)</p>"+
-                    "<p>Star Distance: " + json[i].st_dist +"( <sub>"+json[i].st_disterr1+"</sub> <sup>"+json[i].st_disterr2+"</sup> ) <sub></sub>(pc)</p>"+
-                    "<p>Star Temperature: " + json[i].st_teff +"( <sub>"+json[i].st_tefferr1+"</sub> <sup>"+json[i].st_tefferr2+"</sup> ) <sub></sub>+(K)</p>"+
-                    "<p>Star Radius: " + json[i].st_rad +"( <sub>"+json[i].st_raderr1+"</sub> <sup>"+json[i].st_raderr2+"</sup> ) <sub></sub>(solar radii)</p>"+
-                 "</div>"+
-                 
+
+                   
                  "<div class=float-right>"+
                  "<p>No. of Planet in System: "+json[i].pl_pnum+"</p>"+
                  "<p>Star Surface Gravity: " + json[i].st_logg +"( <sub>"+json[i].st_loggerr1+"</sub> <sup>"+json[i].st_loggerr2+"</sup> ) <sub></sub></p>"+
                  "<p>Discovery Method: "+json[i].pl_discmethod+"</p>"+
                  "<p>Telescope Name: "+json[i].pl_telescope+"</p>"+
                  "<p>Instrument Used: "+json[i].pl_instrument+"</p>"+
-                 "<p><More Information: <a href= '"+json[i].pl_pelink+"'></p>"+
+                 "<p>More Information: <a href= '"+json[i].pl_pelink+"'>Click here</a></p>"+
                  "</div>"+
+                 
+                 "<div class='float-left'>"+
+                   "<p>Star Name:"+json[i].pl_hostname +"</p>"+
+                   "<p>Radius: " + json[i].pl_rade +"( <sub>"+json[i].pl_radeerr1+"</sub> <sup>"+json[i].pl_radeerr2+"</sup> ) R<sub>J</sub>(Earth Reference)</p>"+
+                   "<p>Radius: " + json[i].pl_radj +"( <sub>"+json[i].pl_radjerr1+"</sub> <sup>"+json[i].pl_radjerr2+"</sup> ) R<sub>J</sub>(Jupiter Reference)</p>"+
+                   "<p>Orbital Time: " + json[i].pl_orbper +"( <sub>"+json[i].pl_orbpererr1+"</sub> <sup>"+json[i].pl_orbpererr2+"</sup> ) <sub></sub>(Day)</p>"+
+                    "<p>Star Distance: " + json[i].st_dist +"( <sub>"+json[i].st_disterr1+"</sub> <sup>"+json[i].st_disterr2+"</sup> ) <sub></sub>(pc)</p>"+
+                    "<p>Star Temperature: " + json[i].st_teff +"( <sub>"+json[i].st_tefferr1+"</sub> <sup>"+json[i].st_tefferr2+"</sup> ) <sub></sub>(K)</p>"+
+                    "<p>Star Radius: " + json[i].st_rad +"( <sub>"+json[i].st_raderr1+"</sub> <sup>"+json[i].st_raderr2+"</sup> ) <sub></sub>(solar radii)</p>"+
+                 "</div>"+
+               
 
                 "</div>" + "<div>" + "<div class='block'>";
             }
