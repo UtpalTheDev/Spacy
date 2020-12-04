@@ -5,7 +5,7 @@ api_key="pk.dc0a935caf7d659d2578a47fca3222b5";
 
 go.addEventListener("click", sat_position);
 
-function getlocation()
+/*function getlocation()
 {   var lon;
     var lat;
     var pin_url = "https://us1.locationiq.com/v1/search.php?key="+api_key+"&q="+pin.value+"&format=json";
@@ -24,7 +24,8 @@ function getlocation()
         .catch(errorhandler)
     
             
-}
+}*/
+
  function sat_position(){
     var lon=-15.25663;
     var lat=-48.00141;
