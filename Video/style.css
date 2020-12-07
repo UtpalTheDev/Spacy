@@ -14,18 +14,32 @@
 }
 .flex-container > div{
     display: block;
-    max-width:900px;
+    max-width:1400px;
     min-width: 400px;
     height: 200px;
-    margin: 0.5rem auto ;
+    margin: 0.5rem;
     border-radius: 1rem;
     background-color:var(--block);   
     color: white;
     padding: 5px 3px 3px 5px;
 }
 
-#myvideo{
+#myVideo{
     width:300px;
     height:200px;
+    float: left;
+    border-radius:1rem ;
+}
+
+.desc{
+    overflow:auto;
+    max-height:155px;
+    min-height: 154px;
+    padding-left: 0.5rem;
+    margin-top:15px ;
+}
+.Link{
+    text-decoration: none;
+    padding-left: 0.5rem;
 }
 
