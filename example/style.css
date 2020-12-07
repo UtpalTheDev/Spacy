@@ -1,0 +1,31 @@
+:root{
+    --block: rgba(81, 90, 138, 0.38);
+    --link:rgba(104, 101, 101, 0.72);
+
+}
+.flex-container{
+    display:flex;
+    flex-direction: column;
+    max-width:1450px;
+    background-color: yellow;
+    margin: auto;
+    
+
+}
+.flex-container > div{
+    display: block;
+    max-width:900px;
+    min-width: 400px;
+    height: 200px;
+    margin: 0.5rem auto ;
+    border-radius: 1rem;
+    background-color:var(--block);   
+    color: white;
+    padding: 5px 3px 3px 5px;
+}
+
+#myvideo{
+    width:300px;
+    height:200px;
+}
+
