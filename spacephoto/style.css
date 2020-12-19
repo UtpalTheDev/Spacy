@@ -1,11 +1,20 @@
 :root{
     --block: rgba(81, 90, 138, 0.38);
     --link:rgba(104, 101, 101, 0.72);
-
+    --bluegray50: #F8FAFC;
+    --bluegray100: #F1F5F9;
+    --bluegray200: #E2E8F0;
+    --bluegray300: #CBD5E1;
+    --bluegray400: #94A3B8;
+    --bluegray500: #64748B;
+    --bluegray600: #475569;
+    --bluegray700: #334155;
+    --bluegray800: #1E293B;
+    --bluegray900: #0F172A;
 }
 .bind-flex{
     overflow: auto;
-    height: 650px;
+    height: 600px;
     width: 350px;
 
 }
@@ -24,17 +33,19 @@
     margin: 0.5rem 1rem ;
     border-radius: 1rem;
     background-color:var(--block);   
-    color: white;
+    color:var(--bluegray300);
     padding: 5px 3px 3px 5px;
 }
 a{
     display: block;
     text-decoration: none;
-    color:black;
-    background-color: var(--link);
+    color:var(--bluegray300);
+    border:1px solid var(--bluegray500);
     border-radius: 0.5rem;
     padding: 1px 5px;
     width:30px;
+    font-weight: 600;
+    font-size: 13px;
     
     
 }
@@ -48,7 +59,7 @@ iframe{
     float: right;
     
     width:65vw;
-    height: 600px;
+    height: 550px;
     border:1px solid rgba(218, 218, 218, 0);
     padding-right: 3rem;
 
@@ -56,6 +67,7 @@ iframe{
 }
 body{
     margin: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 #myVideo{
     width: 100%;
@@ -70,29 +82,29 @@ body{
     margin-top: 1rem;
     color: white;
 }
-.header textarea{
-    display: inline-block;
+ #textarea{
+   
     text-align: center;
-    resize: none;
-    border-radius: 1rem;
-    padding: 5px 5px 0px 5px;
-    font-size:25px;
+   
+    border-radius: 0.5rem 0 0 0.5rem;
+   
+    font-size:15px;
     background-color: rgba(255, 255, 255, 0.555);
     border: none;
     
 }
 
 .search{
-    display: block;
+    
     width:60px;
-    height: 30px;
+    
     background-color: var(--link);
-    border-radius: 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
     color: white;
     font-size: 15px;
     border:none;
-    padding:0px 5px ;
-    margin-top: 5px;
+   
+
     cursor: pointer;
 }
 .search:hover{
@@ -113,4 +125,16 @@ body{
 }
 a{
     text-decoration: none;
+}
+
+.search-tab{
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.search-info{
+    text-align: center;
+}
+.navigation{
+    background-color: var(--bluegray300);
 }
