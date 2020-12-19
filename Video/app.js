@@ -1,7 +1,18 @@
 window.addEventListener("load",blockfunc);
 var url="https://images-api.nasa.gov/search?q=curiosity&media_type=video"
 var data=document.querySelector("#container");
+var button=document.querySelector("#search");
+var input=document.querySelector("#textarea");
+button.addEventListener("click",searching);
 
+function searching(){
+if(input.value!=null){  
+url="https://images-api.nasa.gov/search?q="+input.value+"&media_type=video"
+blockfunc();
+}
+}
+
+//loading function
 function blockfunc() {
     
   
@@ -14,7 +25,7 @@ function blockfunc() {
             console.log(url1);
             html="<div>";
            
-            for(i=0;i<first_obj.length;i++){
+            for(i=0;i<15;i++){
                 
               var center=first_obj[i].data[0].center;
               var description=first_obj[i].data[0].description;
@@ -41,12 +52,17 @@ function blockfunc() {
         })
         .catch(errorhandler)   
 }
+
+
+//error handle
 function errorhandler(error) {
     console.log(error);
     alert("error");
     
 }
 
+
+//nested fetch call
 async function fetc(get_url,get_center,get_description,get_title,get_date_created) {
   
 
@@ -71,6 +87,7 @@ async function fetc(get_url,get_center,get_description,get_title,get_date_create
     for(var j=0;j<json2.length;j++){
       var mp4=json2[j].includes("~medium.mp4");
       var prev=json2[j].includes("~mobile.mp4");
+      var jpg=json2[j].includes("~medium.jpg");
 
     
   
@@ -88,17 +105,20 @@ async function fetc(get_url,get_center,get_description,get_title,get_date_create
       console.log(prev_link);
       console.log("2");
       } 
-    
+    if(jpg==true){
+      var prev_img=json2[j];
+      
+    }
     
     }
     html+=
-    "<video id='myVideo' controls preload='none'>"+
+    "<video id='myVideo' controls preload='none' alt='loading' poster='"+prev_img+"'>"+
 
     "<source src='"+prev_link+"' type='video/mp4'>"+
 
     "</video>"+
-    "<div class='desc'>"+title+"<br>"+"Location :"+center+"<br>"+
-    "Date: "+date_created+"<br>"+"Description: "+description+"</div>"+
+    "<div class='desc'><span class='title'>"+title+"</span><br>"+"Location: <span class='info'>"+center+"</span><br>"+
+    "Date: <span class='info'>"+date_created+"</span><br>"+"Description: <span class='info'>"+description+"</span></div>"+
     "<div id='Link' ><a class='Link' href='"+mp4_link+"'>Link</a></div>"+"</div>"+"<div>";
 
   data.innerHTML=html;
