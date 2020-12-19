@@ -54,7 +54,21 @@ body{
     padding-left: 0.5rem;
     margin-top:15px ;
     margin-bottom: 5px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--bluegray900) var(--bluegray800) ;
 }
+
+
+.desc::-webkit-scrollbar{
+    width:5px;
+    background-color:var(--bluegray800);
+}
+.desc::-webkit-scrollbar-thumb{
+    background-color: var(--bluegray900);
+   
+}
+
+
 .Link{
     text-decoration: none;
     padding-left: 0.5rem;
