@@ -8,22 +8,23 @@
 
 </head>
 <body>
-
+    <video autoplay muted loop id="myVideo">
+        <source src="space-vid.mp4" type="video/mp4">
+    </video>
  <nav>
      <div class="navigation"> 
-         Spacy
+         <span class="icon-img"><img src="space.gif"></span><span class="icon">Spacy</span>
      </div>
  </nav>
 
  <main>
-    <video autoplay muted loop id="myVideo">
-        <source src="space-vid.mp4" type="video/mp4">
-    </video>
+   
      <header class="header">
-         <div>Enter the Sol number(Sol is a martian day)</div>
-         <textarea id="textarea" rows="1" cols="10"></textarea>
+         <div class="search-info">Enter the Sol number(Sol is a martian day)</div>
+         <div class="search-tab">
+         <input id="textarea"></input>
          <button id="search" class="search">Search</button>
-
+         </div>
      </header>
 
      <section class="section">
@@ -41,6 +42,7 @@
 
      </div>
     </div>
+    
      <script src=app4.js type=text/javascript></script>
  </main>
  
