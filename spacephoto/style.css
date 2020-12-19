@@ -16,8 +16,20 @@
     overflow: auto;
     height: 600px;
     width: 350px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--bluegray900) var(--block);
 
 }
+
+.bind-flex::-webkit-scrollbar{
+    width:5px;
+    background-color:var(--block);
+}
+.bind-flex::-webkit-scrollbar-thumb{
+    background-color: var(--bluegray900);
+   
+}
+
 
 .flex-container{
     display:flex;
