@@ -55,6 +55,13 @@ body{
 .Link{
     text-decoration: none;
     padding-left: 0.5rem;
+    color:var(--bluegray200);
+    font-weight:600;
+    border:1px solid var(--bluegray500);
+    cursor:pointer;
+    margin-left:0.5rem;
+    padding:3px;
+    border-radius: 0.5rem;
 }
 
 #textarea{
@@ -72,7 +79,7 @@ body{
     background-color: var(--bluegray700);
     border:none;
     font-family: 'Montserrat', sans-serif;
-    color:var(--bluegray300);
+    color: var(--bluegray300);
 }
 
 header{
@@ -83,7 +90,7 @@ header{
 .info{
     color:var(--bluegray400);
     font-weight: 300;
-    font-size: 15px;
+    font-size: 14px;
 }
 .title{
 font-weight: 600;

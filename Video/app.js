@@ -6,7 +6,7 @@ var input=document.querySelector("#textarea");
 button.addEventListener("click",searching);
 
 function searching(){
-if(input.value!=null){  
+if((input.value)!=null){  
 url="https://images-api.nasa.gov/search?q="+input.value+"&media_type=video"
 blockfunc();
 }
@@ -119,7 +119,7 @@ async function fetc(get_url,get_center,get_description,get_title,get_date_create
     "</video>"+
     "<div class='desc'><span class='title'>"+title+"</span><br>"+"Location: <span class='info'>"+center+"</span><br>"+
     "Date: <span class='info'>"+date_created+"</span><br>"+"Description: <span class='info'>"+description+"</span></div>"+
-    "<div id='Link' ><a class='Link' href='"+mp4_link+"'>Link</a></div>"+"</div>"+"<div>";
+    "<div id='Link' ><a class='Link' href='"+mp4_link+"'>HD</a></div>"+"</div>"+"<div>";
 
   data.innerHTML=html;
     
