@@ -136,5 +136,22 @@ a{
     text-align: center;
 }
 .navigation{
-    background-color: var(--bluegray300);
+    background-color: var(--block);
+    height:50px;
+    color:var(--bluegray200);
+
+   
+}
+.icon{
+ position: relative;
+ top:13px;
+ font-size: 25px;
+}
+.icon-img img{
+   
+    width:66px;
+    height:40px;
+    position:absolute;
+    top:15px;
+    
 }
