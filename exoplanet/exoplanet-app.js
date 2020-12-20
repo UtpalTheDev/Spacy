@@ -12,7 +12,7 @@ function exoplanet() {
             var length=json.length;
             for (var i = 0; i < length; i++) {
 
-                console.log(json[i].pl_hostname);
+                
                 div += json[i].pl_name +
                  "</div>" + 
                  "<div class='disc'>" + "Discovery: " + json[i].pl_disc +
