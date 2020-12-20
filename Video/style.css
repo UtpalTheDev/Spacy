@@ -121,6 +121,28 @@ font-size: 20px;
 
    
 }
+.navigation li{
+    display: inline;
+    padding-left: 7px;
+    padding-right:7px ;
+    
+   }
+   .navigation ul{
+    display: relative;
+    text-align: right;
+    margin: 0;
+    padding-right: 1px;
+   }
+  
+   .navigation a{
+     text-decoration: none;
+     color:var(--bluegray200);
+     
+   }
+  
+   .active{
+      border-bottom: 1px solid var(--bluegray200);  
+   }
 .icon{
  position: relative;
  top:13px;
