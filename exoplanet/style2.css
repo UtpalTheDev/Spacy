@@ -100,10 +100,10 @@ body{
 
   .block{
     font-size:60px;
-    color: var(--container);
+    color: var(--bluegray700);
     font-weight: bolder;
     padding: 2rem;
-    (--container);
+   
     clear: left;
   }
   .float-left{
@@ -123,35 +123,47 @@ body{
     margin: 1px;
     box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 2rem;
+    background-color: var(--bluegray400);
   }
 
   .float-right{
     display: block;
     float: right;
-    padding:3rem 5rem 0rem 2rem ;
+    padding:3rem 0rem 0rem 0rem ;
+    margin:2px 15px;
+    max-width: 450px;
   }
   p{
     border-left: 3px solid black;
     padding:0.5rem;
     border-top:1px solid var(--para-even);
+  
 
   }
   p:nth-child(even){
-    background-color: var(--para-even);
+    background-color: var(--bluegray500);
+
   }
-  textarea{
+  #textarea{
     display: block;
-    border: 1px solid var(--para-even);
-    border-radius: 1rem;
+    border:none;
+    border-radius: 0.5rem 0 0 0.5rem;
     width:200px;
     padding: 0.5rem;
-    margin:auto;
+  
   }
   button{
     display: block;
     font-size: 15px; 
-    border-radius: 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
     padding: 0rem 0.5rem 0rem 0.5rem;
-    margin: 1rem auto;
+    background-color: var(--bluegray400);
     width: 70px;
+    border:none;
+    cursor: pointer;
   }
+ .section{
+   display:flex;
+   justify-content: center;
+   margin-bottom: 2rem;;
+ }
