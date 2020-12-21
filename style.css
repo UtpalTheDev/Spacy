@@ -30,6 +30,24 @@ body{
     background-color: rgb(14, 14, 14);
     color: blanchedalmond;
 }  
+.navigation li{
+    display: inline;
+    padding-left: 7px;
+    padding-right:7px ;
+    
+   }
+   .navigation ul{
+    display: relative;
+    text-align: right;
+    margin: 0;
+    padding-right: 1px;
+   }
+  
+   .navigation a{
+     text-decoration: none;
+     color:var(--bluegray200);
+     
+   }
 
 .first-container{
     display: block;
