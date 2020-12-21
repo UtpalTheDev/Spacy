@@ -50,39 +50,69 @@ body{
    }
 
 .first-container{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     margin-top:55px;
 }
 
-.float-right{
+.right{
     display: block;
-    float: right;
+    
     height:400px;
-    width:500px;
-    background-color: white;
-    margin-right: 100px;
+    width:400px;
+    
+    margin:0px auto;
 }
-
-.float-left{
-    display: block;
-    height: 400px;
-    width:700px;
-    background-color: white;
+.right video{
+    width:400px;
+    height:200px;
+    object-fit: fill;
 }
-.float-left img{
-    width:700px;
-    height:400px;
+.exo-info{
+    padding: 20px 5px 0px 5px;
+    font-size: 15px;
+    font-weight: 200;
+    color:blanchedalmond;
+}
+.exo-button{
+    padding-top: 20px;
+    text-align:right;
+    margin-right: ;
+}
+.exo-button a{
+text-decoration: none;
+border:1px solid blanchedalmond;
+color:blanchedalmond;
+padding:5px;
+border-radius: 0.5rem;
+}
+.left{
+   
+    margin:0px auto;
+}
+.left img{
+    width:50vw;
+    height:28vw;
     
 }
 
 .second-container{
     display: block;
     margin-top: 55px;
+    clear:left;
+    clear:right;
 }
 .photo-info{
     text-align: center;
     height:150px;
+    clear: left;
+    clear: right;
     
+}
+.photo-info p{
+    position: relative;
+    top:70px;
+    font-size: 25px;
 }
 
 .rover-block{
