@@ -72,6 +72,7 @@ body{
 .float-left img{
     width:700px;
     height:400px;
+    
 }
 
 .second-container{
@@ -79,20 +80,50 @@ body{
     margin-top: 55px;
 }
 .photo-info{
+    text-align: center;
     height:150px;
-    background-color: white;
+    
 }
 
 .rover-block{
     display: flex;
     flex-wrap: wrap;
-    background-color: gray;
+
     justify-content: center;
 }
 .rover-block > div{
    width:400px;
-   height:500px;
-   background-color:lightcoral;
+   height:600px;
    margin:20px;
    margin-top: 60px;
+}
+.model{
+    padding-bottom: 15px;
+  
+
+}
+.rover-name{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 2px solid blanchedalmond;
+}
+p > span{
+    font-weight:500;
+}
+p{
+    font-weight: 200;
+}
+.rover-button a{
+    border:1px solid blanchedalmond;
+    margin-right:10px;
+    text-decoration: none;
+    padding:5px;
+    border-radius: 0.5rem;
+    color:blanchedalmond;
+}
+
+.rover-button{
+    text-align: right;
 }
