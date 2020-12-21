@@ -74,6 +74,9 @@ body{
     font-weight: 200;
     color:blanchedalmond;
 }
+.exo-info span{
+    font-weight: 500;
+}
 .exo-button{
     padding-top: 20px;
     text-align:right;
