@@ -4,7 +4,7 @@ var input_sol=document.querySelector("#textarea");
 var api_key="gbdWMPYueZpfzSlsDGzIx39RfYKnDUQ48AZiRj5l"
 
 
-var url="https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=1000&page=1&api_key="+api_key;
+var url="https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=100&page=1&api_key="+api_key;
 
 window.addEventListener("load",blockfunc);
 search.addEventListener("click",clickfunc);
