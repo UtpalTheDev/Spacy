@@ -83,6 +83,7 @@
 iframe{
     
     width:65vw;
+
     height: 45vw;
     border:1px solid rgba(218, 218, 218, 0);
     margin-bottom: 15px;   
@@ -132,6 +133,12 @@ body{
 .search:hover{
     background-color: rgb(117, 114, 114);
     transition: 0.5s;
+}
+.search:active{
+    background-color: black;
+    color:white;
+    transition: 0s;
+
 }
 .short-img{
    float: left;
