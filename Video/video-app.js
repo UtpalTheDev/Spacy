@@ -33,9 +33,10 @@ function blockfunc() {
               var date_created=first_obj[i].data[0].date_created;
               var title=first_obj[i].data[0].title;
 
-                console.log("///////////////////////");
+               /* console.log("///////////////////////");
                 console.log(center);
-                console.log("///////////////////////");
+                console.log("///////////////////////");*/
+                
                 url1=first_obj[i].href;
                /* fetch(url1)
                 .then(response => response.json() )
@@ -80,10 +81,10 @@ async function fetc(get_url,get_center,get_description,get_title,get_date_create
    var json2= await res.json();   
 
 
-  
+  /*
    console.log("2 ///////////////////////");
    console.log(center);
-   console.log("2 ///////////////////////");
+   console.log("2 ///////////////////////");*/
     for(var j=0;j<json2.length;j++){
       var mp4=json2[j].includes("~medium.mp4");
       var prev=json2[j].includes("~mobile.mp4");

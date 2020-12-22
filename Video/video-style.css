@@ -40,8 +40,10 @@ body{
 }
 
 #myVideo{
-    width:300px;
-    height:200px;
+    max-width:300px;
+    max-height:200px;
+    width:45vw;
+    height: 45vw;
     float: left;
     border-radius:1rem ;
 }
