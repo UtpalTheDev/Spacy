@@ -111,15 +111,22 @@ body{
     display: block;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    width:800px;
+    width:700px;
     border-radius: 0rem 0rem 1rem 2rem;
     border-top: 3px solid var(--container);
     box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    margin-right: auto;
+  }
 
+  .search-flex-bind{
+    display: flex;
+    flex-wrap: wrap;
+ 
   }
   .box{
-    display: block;
-    height: 650px;
+   
+    min-height: 650px;
     margin: 1px;
     box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 2rem;
@@ -128,10 +135,13 @@ body{
 
   .float-right{
     display: block;
-    float: right;
+   
     padding:3rem 0rem 0rem 0rem ;
     margin:2px 15px;
-    max-width: 450px;
+    width:450px;
+    max-width: 455px;
+    margin-left: auto;
+    margin-right: auto;
   }
   p{
     border-left: 3px solid black;

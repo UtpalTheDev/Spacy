@@ -29,14 +29,7 @@ function exoplanet() {
                  "</div>" +
 
                    
-                 "<div class=float-right>"+
-                 "<p>No. of Planet in System: "+json[i].pl_pnum+"</p>"+
-                 "<p>Star Surface Gravity: " + json[i].st_logg +"( <sub>"+json[i].st_loggerr1+"</sub> <sup>"+json[i].st_loggerr2+"</sup> ) <sub></sub></p>"+
-                 "<p>Discovery Method: "+json[i].pl_discmethod+"</p>"+
-                 "<p>Telescope Name: "+json[i].pl_telescope+"</p>"+
-                 "<p>Instrument Used: "+json[i].pl_instrument+"</p>"+
-                 "<p>More Information: <a href= '"+json[i].pl_pelink+"'target='_blank'>Click here</a></p>"+
-                 "</div>"+
+                "<div class='search-flex-bind'>"+
                  
                  "<div class='float-left'>"+
                    "<p>Star Name: "+json[i].pl_hostname +"</p>"+
@@ -47,8 +40,17 @@ function exoplanet() {
                     "<p>Star Temperature: " + json[i].st_teff +"( <sub>"+json[i].st_tefferr1+"</sub> <sup>"+json[i].st_tefferr2+"</sup> ) <sub></sub>(K)</p>"+
                     "<p>Star Radius: " + json[i].st_rad +"( <sub>"+json[i].st_raderr1+"</sub> <sup>"+json[i].st_raderr2+"</sup> ) <sub></sub>(solar radii)</p>"+
                  "</div>"+
-               
 
+                 "<div class=float-right>"+
+                 "<p>No. of Planet in System: "+json[i].pl_pnum+"</p>"+
+                 "<p>Star Surface Gravity: " + json[i].st_logg +"( <sub>"+json[i].st_loggerr1+"</sub> <sup>"+json[i].st_loggerr2+"</sup> ) <sub></sub></p>"+
+                 "<p>Discovery Method: "+json[i].pl_discmethod+"</p>"+
+                 "<p>Telescope Name: "+json[i].pl_telescope+"</p>"+
+                 "<p>Instrument Used: "+json[i].pl_instrument+"</p>"+
+                 "<p>More Information: <a href= '"+json[i].pl_pelink+"'target='_blank'>Click here</a></p>"+
+                 "</div>"+
+               
+                "</div>"+
                 "</div>" + "<div>" + "<div class='block'>";
             }
             box.innerHTML = div + "</div>" + "</div>";
