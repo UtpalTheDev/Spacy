@@ -133,6 +133,12 @@ body{
     background-color: rgb(117, 114, 114);
     transition: 0.5s;
 }
+.search:active{
+    background-color: black;
+    color:white;
+    transition: 0s;
+
+}
 .short-img{
    float: left;
     width:60px;
