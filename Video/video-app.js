@@ -23,7 +23,7 @@ function blockfunc() {
             var url1=json1.collection.items[0].href;
             first_obj=json1.collection.items
             console.log(url1);
-            html="<div>";
+            html="";
            
             for(i=0;i<15;i++){
                 
@@ -42,7 +42,7 @@ function blockfunc() {
                 .then(response => response.json() )
                 .then(json2=>*/
                 
-                  fetc(url1,center,description,title,date_created);
+                  fetc(url1,center,description,title,date_created,i);
               
             }
              
@@ -64,7 +64,7 @@ function errorhandler(error) {
 
 
 //nested fetch call
-async function fetc(get_url,get_center,get_description,get_title,get_date_created) {
+async function fetc(get_url,get_center,get_description,get_title,get_date_created,get_i) {
   
 
   try{
@@ -73,6 +73,7 @@ async function fetc(get_url,get_center,get_description,get_title,get_date_create
     var description=get_description;
     var title=get_title;
     var date_created=get_date_created;
+    var last=get_i;
     const res=await fetch(url1);
     if(!res.ok){
       throw new Error(res.status);
@@ -112,7 +113,8 @@ async function fetc(get_url,get_center,get_description,get_title,get_date_create
     }
     
     }
-    html+=
+
+    html+="<div>"+
     "<video id='myVideo' controls preload='none' alt='loading' poster='"+prev_img+"'>"+
 
     "<source src='"+prev_link+"' type='video/mp4'>"+
@@ -120,10 +122,10 @@ async function fetc(get_url,get_center,get_description,get_title,get_date_create
     "</video>"+
     "<div class='desc'><span class='title'>"+title+"</span><br>"+"Location: <span class='info'>"+center+"</span><br>"+
     "Date: <span class='info'>"+date_created+"</span><br>"+"Description: <span class='info'>"+description+"</span></div>"+
-    "<div id='Link' ><a class='Link' href='"+mp4_link+"' target='_blank' >HD</a></div>"+"</div>"+"<div>";
-
-  data.innerHTML=html;
-    
+    "<div id='Link' ><a class='Link' href='"+mp4_link+"' target='_blank' >HD</a></div>"+"</div>";
+  if(last>=14){
+   data.innerHTML=html;
+  } 
   }
   catch(error){
   console.log(error);
